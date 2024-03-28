@@ -282,6 +282,7 @@ p {
 }
 .hero-block h1 {
   color: #4e4b72;
+  font-size: 52px !important;
 }
 .hero-block h2 {
   font-size: 36px;
@@ -512,4 +513,10 @@ p {
   border-color: #df496d;
   color: #df496d;
   cursor: pointer;
+}
+h3 {
+  font-size: 32px;
+  color: #666666;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
