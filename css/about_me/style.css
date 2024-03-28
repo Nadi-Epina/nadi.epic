@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* Common Styles*/
+body {
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+.header {
+  /* background-color: aquamarine; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "logo menu";
+  margin-bottom: 40px;
+}
+.logo {
+  grid-area: logo;
+}
+
+.menu {
+  justify-content: end;
+  align-items: center;
+  display: flex;
+}
+.menu ul {
+  justify-content: end;
+  align-items: end;
+  display: flex;
+}
+.menu ul li {
+  margin-left: 42px;
+}
+.menu ul li a {
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #666666;
+}
+.header-img {
+  /* height: 420px; */
+  /* background-color: aqua; */
+  margin-bottom: 40px;
+
+}
+.header-img img {
+width: 100%;
+}
+.my-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+  gap: 20px;
+}
+h2 {
+  font-size: 48px;
+  color: #4e4b72;
+  font-style: bold;
+}
+h1 {
+  font-size: 24px;
+  color: #000000;
+}
+p {
+  font-size: 20px; /* Можете уменьшить для более тонкого текста */
+  line-height: 1.6; /* Это улучшит читаемость абзацев */
+  margin-bottom: 16px; /* или любое другое значение, которое вам нравится */
+}
+.my-skills .block {
+  height: 140px;
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Это выравнивает текст по центру, если он занимает несколько строк */
+  margin-bottom: 40px;
+}
+.my-skills .block img {
+  margin-bottom: 16px;
+}
+.my-story {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px 0; /* Добавляет верхний и нижний отступы */
+  /* padding: 40px; */
+}
+.my-story .text h2 {
+  text-align: left; /* Центрирует заголовок */
+  /* margin-bottom: 20px; Добавляет пространство под заголовком */
+  font-weight: bold;
+}
+
+.my-story .text {
+  /* height: 580px; */
+  /* background-color:blueviolet; */
+  padding: 20px; /* или больше, в зависимости от ваших нужд */
+  /* background-color: blueviolet; */
+  color: rgb(0, 0, 0); /* Это если вы хотите изменить цвет текста на белый */
+  font-size: 20px; /* Можете уменьшить для более тонкого текста */
+  line-height: 1.6; /* Это улучшит читаемость абзацев */
+}
+.my-story .img {
+  /* height: 580px; */
+  /* background-color:rgb(26, 4, 46); */
+  display: flex;
+  justify-content: center; /* Горизонтальное выравнивание */
+  align-items: center; /* Вертикальное выравнивание */
+  height: 100%; /* или фиксированная высота, если нужна */
+
+}
+.my-story .img img {
+  width: 100%;
+}
+.my-archiv {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: 20px;
+}
+.my-archiv .text h2 {
+  font-weight: bold;
+  /* background-color:blueviolet; */
+}
+.my-archiv .img {
+  background-color: rgb(26, 4, 46);
+  width: 100%;
+  height: auto;
+  background: url("path-to-your-image.jpg") no-repeat center center;
+  background-size: cover;
+}
+.my-archiv .img img {
+  width: 100%;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+.logo-grey-small {
+  display: none;
+}
+
+.footer-contact-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 11px;
+}
+
+.footer-text {
+  color: #c2c2c2;
+  font-size: 33px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-contact-list img {
+  width: 64px;
+  height: 64px;
+}
