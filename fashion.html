@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/fashion/style.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                autoplay: true,
+                arrows: true,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div class="wrapper" style="padding-top: 14px; padding-bottom: 14px">
+    <div class="grid y-center">
+        <div class="col-4 col-sm-1">
+            <div class="logo">
+                <svg height="83" viewBox="0 0 193 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M41.3109 24.3838C43.228 24.1008 44.5299 22.4579 44.2187 20.7142C43.9075 18.9706 42.1011 17.7865 40.1839 18.0696C38.2668 18.3526 36.9649 19.9955 37.2761 21.7392C37.5873 23.4828 39.3937 24.6669 41.3109 24.3838Z"
+                          fill="#DF496D"/>
+                    <path d="M64.0421 37.6616L57.6907 43.4328C57.3942 43.7025 56.9079 43.7025 56.6114 43.4328L56.5106 43.3411C56.558 42.6669 56.5936 41.9927 56.5936 41.3131V32.5699L61.6581 29.2798C62.0377 29.0317 62.0377 28.5193 61.6581 28.2765L56.5936 24.9864V22.8559C56.5936 16.9929 53.9427 11.2379 49.317 7.06313C44.7981 2.97471 38.8914 0.736328 32.6704 0.736328C32.6111 0.736328 32.5518 0.736328 32.4925 0.736328C26.1708 0.779478 20.2285 3.03944 15.7629 7.10628C11.244 11.2109 8.75917 16.6693 8.75917 22.4891V43.4166L8.73545 43.4382C8.43893 43.7079 7.95264 43.7079 7.65612 43.4382L1.30468 37.667C0.824322 37.2301 0 37.5375 0 38.1578V53.2763C0 61.4801 3.65311 68.9073 9.5657 74.2848C15.5079 79.6893 23.7215 83.0172 32.7891 82.9848C50.8648 82.9255 65.3409 69.2686 65.3409 52.8286V38.1578C65.3409 37.5375 64.5225 37.2301 64.0362 37.667L64.0421 37.6616ZM11.3685 22.4837C11.3685 17.3004 13.5865 12.4353 17.6073 8.77833C21.5866 5.15916 26.8824 3.14192 32.5103 3.10416C32.5637 3.10416 32.6171 3.10416 32.6704 3.10416C38.1976 3.10416 43.4519 5.09983 47.4786 8.73518C51.6121 12.4676 53.9842 17.6078 53.9842 22.8451V41.038L49.5068 36.9712C49.2103 36.7015 48.724 36.7015 48.4275 36.9712L41.3229 43.4328C41.0263 43.7025 40.5401 43.7025 40.2435 43.4328L33.2101 37.0413C32.9136 36.7716 32.4273 36.7716 32.1308 37.0413L25.1033 43.4328C24.8068 43.7025 24.3205 43.7025 24.024 43.4328L16.9194 36.9712C16.6228 36.7015 16.1366 36.7015 15.84 36.9712L11.3626 41.0434V22.4891L11.3685 22.4837Z"
+                          fill="#DF496D"/>
+                    <path d="M101.451 37.4668H80.5705V8.75131H101.451V16.1353H89.1851V19.8683H99.8919V26.4318H89.1851V30.0828H101.451V37.4668ZM114.223 16.1353V21.8374H118.653C120.13 21.8374 121.197 20.4426 121.197 19.0479C121.197 17.53 120.13 16.1353 118.653 16.1353H114.223ZM119.556 28.6881H114.223V37.4668H105.608V8.75131H119.556C126.243 8.75131 129.811 13.4689 129.811 18.9658C129.811 24.4628 126.202 28.6881 119.556 28.6881ZM141.665 8.75131V37.4668H133.05V8.75131H141.665ZM145.194 23.1091C145.194 15.1097 151.511 8.30006 161.192 8.30006C165.951 8.30006 169.192 10.1871 172.268 12.8945L167.387 18.4736C165.459 16.2994 163.161 15.684 161.192 15.684C156.721 15.684 153.808 18.9658 153.808 23.1091C153.808 27.2523 156.721 30.5341 161.192 30.5341C163.161 30.5341 165.459 29.9187 167.387 27.7446L172.268 33.3236C169.192 36.031 165.951 37.918 161.192 37.918C151.511 37.918 145.194 31.1084 145.194 23.1091ZM98.7843 74.4668L89.1851 60.7654V74.4668H80.5705V45.7513H87.2981L96.8563 59.2066V45.7513H105.471V74.4668H98.7843ZM116.65 74.4668H107.748L118.865 45.7513H126.495L137.9 74.4668H128.752L126.906 69.6672H118.373L116.65 74.4668ZM122.721 54.8582L119.727 62.9396H125.47L122.721 54.8582ZM153.557 74.4668H140.061V45.7513H153.557C161.925 45.7513 168.161 52.1918 168.161 60.1091C168.161 68.0673 161.925 74.4668 153.557 74.4668ZM152.367 53.1353H148.675V67.0828H152.367C156.798 67.0828 159.546 64.3343 159.546 60.1091C159.546 55.8428 156.798 53.0943 152.367 53.1353ZM180.363 45.7513V74.4668H171.749V45.7513H180.363Z"
+                          fill="#DF496D"/>
+                </svg>
+            </div>
+        </div>
+        <div class="col-8 col-sm-3">
+            <ul class="nav">
+                <li><a href="/index.html">Work</a></li>
+                <li><a href="/about-me.html">About me</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="hero-section">
+    <div class="wrapper">
+        <div class="grid">
+            <div class="col-4 col-sm-4 elem">
+                <img src="/images/fashion/logo.png">
+            </div>
+            <div class="col-8 col-sm-4 elem">
+                <img src="/images/fashion/header-mobile.png">
+            </div>
+            <div class="col-3 col-sm-2">
+                <span><b>Project Type</b></span><br>
+                <span>Fashion app</span>
+            </div>
+            <div class="col-3 col-sm-2">
+                <span><b>My Role</b></span><br>
+                <span>UX / UI designer</span>
+            </div>
+            <div class="col-3 col-sm-2">
+                <span><b>Project Timeline</b></span><br>
+                <span>3 weeks</span>
+            </div>
+
+            <div class="col-3 col-sm-2">
+                <span><b>Project Stack</b></span><br>
+                <span>Figma, Trello, Adobe</span>
+            </div>
+        </div>
+        <div class="grid">
+
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid y-center">
+        <div class="col-sm-4 none sm-block">
+            <b>Introduction</b><br>
+            Discover how the Tokyo Fashion Street app revitalizes the experience of exploring street fashion. We've
+            transformed the app into a digital hub of style inspiration, leveraging user-centered design to enhance
+            engagement and conversion rates.
+        </div>
+        <div class="col-6 col-sm-4">
+            <img src="/images/fashion/h-mobile-screen-1.png">
+        </div>
+        <div class="col-6">
+            <div class="grid">
+                <div class="col-12 sm-none">
+                    <b>Introduction</b><br>
+                    Discover how the Tokyo Fashion Street app revitalizes the experience of exploring street
+                    fashion. We've
+                    transformed the app into a digital hub of style inspiration, leveraging user-centered design to
+                    enhance
+                    engagement and conversion rates.</p>
+                </div>
+                <div class="col-6 col-sm-4">
+                    <b>Issues</b>
+                    <ul>
+                        <li>Users are unable to search</li>
+                        <li>Difficult navigation</li>
+                        <li>Lack of purchasing options</li>
+                        <li>No filter options</li>
+                    </ul>
+                    <br>
+                    <b>User Goals</b>
+                    <ul>
+                        <li>Opportunity to get inspiration from improved photos</li>
+                        <li>Improve user engagement and satisfaction by enhancing the overall shopping experience</li>
+                        <li> Enable users to search for their preferred brands easily</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-4">
+                    <b>Solutions</b><br>
+                    <ul>
+                        <li>Add search and filter functions</li>
+                        <li>Integrate purchase options</li>
+                        <li>Optimize purchase process</li>
+                        <li>Change home-page</li>
+                    </ul>
+                    <br>
+                    <b>Business Goals</b><br>
+                    <ul>
+                        <li>E- commerce (Affinity marketing)</li>
+                        <li>Provide seamless access to purchasing options for clothing featured on the app.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hero-section">
+    <div class="wrapper">
+        <div class="grid y-center sm-none">
+            <div class="col-5 col-sm-4">
+                <h1>Homepage</h1>
+                <p>During my research I discovered that the homepage was ineffificent. I decided to combine both
+                    inspiration and the option for purchasing products.</p>
+            </div>
+            <div class="col-7 col-sm-4">
+                <img src="/images/fashion/h-s-1-1.png">
+            </div>
+        </div>
+        <div class="grid sm-block none">
+            <div class="col-6 col-sm-4">
+                <h1>Homepage</h1>
+                <img src="/images/fashion/h-s-1.png">
+                <p>During my research I discovered that the homepage was ineffificent. I decided to combine both
+                    inspiration and the option for purchasing products.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-3">
+            <img src="/images/fashion/kate-l.png">
+        </div>
+        <div class="col-9">
+            <h1>User persona</h1>
+            <div class="grid">
+                <div class="col-6">
+                    <b>Kate L.</b>
+                    <ul>
+                        <li>A trend-savvy college student who values quick, stylish insights</li>
+                        <li>Enjoys using social media platforms to find inspiration for her art</li>
+                        <li>Wants to pilot overseas fashion trends to US audiences</li>
+                    </ul>
+                    <br>
+                    <b>Backstory</b><br>
+                    Kate searches for inspiration when she needs new clothes, professional and personal, and pays close
+                    attention to brands and influencers/models to reach out for freelance opportunities when she hears
+                    of new brand launches.
+                </div>
+                <div class="col-6">
+                    <b>Goals</b>
+                    <ul>
+                        <li>Keeps track of growing fashion brands to someday work with them</li>
+                        <li>Believes her style leaves a lasting impression</li>
+                        <li>Make professional first impressions</li>
+                    </ul>
+                    <br>
+                    <b>Pain Points</b><br>
+                    <ul>
+                        <li>Losing inspiring outfits ot being able to pinpoint the right aesthetic or clothing items
+                        </li>
+                        <li>Not being able to trace the brand name or clothing creator</li>
+                        <li>Overwhelmed by too many choices and complex navigation.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sep"></div>
+    <div class="grid">
+        <div class="col-6">
+            <div class="user-persona-card">
+                <div class="grid">
+                    <div class="col-4 col-sm-1 flex x-y-center">
+                        <svg width="85" height="84" viewBox="0 0 85 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="42.7379" cy="42.0707" r="39.7009" stroke="white" stroke-width="4.12229"/>
+                            <path d="M22.8657 40.7954L37.9447 55.8744" stroke="white" stroke-width="4.15526"/>
+                            <path d="M33.7618 57.1523L62.02 28.8943" stroke="white" stroke-width="4.15526"/>
+                        </svg>
+                    </div>
+                    <div class="col-8 col-sm-3 flex y-center">
+                        <b>Users Wanted</b>
+                        <ul>
+                            <li>Organized navigation</li>
+                            <li>Search feature!</li>
+                            <li>Thoughtfully branded, sleek user interface</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="user-persona-card">
+                <div class="grid">
+                    <div class="col-4 col-sm-1 flex x-y-center">
+                        <svg width="85" height="84" viewBox="0 0 85 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="42.7379" cy="41.8089" r="39.7009" stroke="white" stroke-width="4.12229"/>
+                            <path d="M27.6584 26.7256L42.7374 41.8046L27.6584 56.8836" stroke="white"
+                                  stroke-width="4.15526"/>
+                            <path d="M57.8166 56.8877L42.7376 41.8087L57.8166 26.7297" stroke="white"
+                                  stroke-width="4.15526"/>
+                        </svg>
+                    </div>
+                    <div class="col-8 col-sm-3 flex y-center">
+                        <b>Users Disliked</b>
+                        <ul>
+                            <li>Outdated user interface</li>
+                            <li>Confusing navigation no</li>
+                            <li>Onboarding experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="grid y-center">
+        <div class="col-7 col-sm-4">
+            <h1>Lo-Fi Prototype</h1>
+        </div>
+        <div class="col-5 col-sm-4">
+            <p>Developed initial prototypes to test navigation flows and layout concepts, ensuring the design met
+                user expectations for simplicity and efficiency.</p>
+        </div>
+    </div>
+    <div class="sep"></div>
+    <div class="grid">
+        <div class="col-12 col-sm-4">
+            <img src="/images/fashion/lo-fi-prototype.png">
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-7 col-sm-4">
+            <h1>feature matrix</h1>
+        </div>
+        <div class="col-5 col-sm-4">
+            <p>The analysis of functionality through Feature Matrix has provided us with a <b>deep understanding of the
+                current and desired state</b> of TokyoFashion application design.</p>
+        </div>
+        <div class="col-12 col-sm-4">
+            <img src="/images/fashion/m-table.png">
+        </div>
+    </div>
+</div>
+<div class="hero-section">
+    <div class="wrapper">
+        <div class="grid y-center sm-none">
+            <div class="col-5 col-sm-4">
+                <h1>Features</h1>
+                <p>The app was lacking a “search” and “filter” function. This meant that the company was missing out on
+                    income opportunities.</p>
+            </div>
+            <div class="col-7 col-sm-4">
+                <img src="/images/fashion/h-s-2.png">
+            </div>
+        </div>
+        <div class="none sm-block">
+            <div class="col-5 col-sm-4">
+                <h1>Features</h1>
+                <img src="/images/fashion/h-s-2.png">
+                <p>The app was lacking a “search” and “filter” function. This meant that the company was missing out on
+                    income opportunities.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-6">
+            <h1>Competitive Analysis</h1>
+            My goal was to study competitors in fashion industry, focusing on Japanese style, to understand their
+            strengths, weaknesses, and innovative features. <b>I am researching the search and filtering functions of
+            competitors to identify best practices.</b><br><br>
+
+            <b>SUMMARY</b><br><br>
+            <ul class="nums">
+                <li><b>Reputation and Stylish Design:</b> Competitors like Style-arena and Droptokyo.com are known for
+                    their reputation and stylish design, which could attract users.
+                </li>
+                <li>
+                    <b>Simplicity of Navigation:</b> Some competitors, such as Instagram, offer simple navigation, which
+                    can be appealing to users looking for ease of use.
+                </li>
+                <li><b>Content Limitations:</b> Platforms like Instagram and Pinterest have content limitations due to
+                    algorithms, potentially leading to less diverse fashion content.
+                </li>
+                <li><b>Access to Content:</b> Vogue restricts access to its best content behind a paywall, which could
+                    be a
+                    barrier for users.
+                </li>
+                <li>
+                    <b>
+                        Based on these insights, Tokyo Fashion App could develop a strategy to improve its search and
+                        filter
+                        functionality, taking into account the strengths and weaknesses of its competitors.
+                    </b>
+                </li>
+            </ul>
+        </div>
+        <div class="col-1 sm-none"></div>
+        <div class="col-5">
+            <div class="slider">
+                <div class="item">
+                    <div class="content">
+                        <img src="/images/fashion/pinterest.png"/>
+                        Created in 2002, includes maps of fashion styles and functions almost like a archive of
+                        street fashion<br><br>
+
+                        <b>Strengths</b>
+                        <ul>
+                            <li>Highly visual</li>
+                            <li>Grid layout</li>
+                            <li>Search functionality</li>
+                            <li>Personal boards</li>
+                            <li>Shopping integration</li>
+                        </ul>
+                        <br>
+
+                        <b>Weaknesses</b><br>
+                        <ul>
+                            <li>Limited social interaction</li>
+                            <li>Only shows content that the algorithm thinks they will like</li>
+                            <li>Slow loading on the app and mobile web version</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <img src="/images/fashion/instagram.png"/>
+                        2010, photo and video sharing social networking service owned by Meta Platforms <br><br>
+
+                        <b>Strengths</b>
+                        <ul>
+                            <li>highly visual</li>
+                            <li>user engagement features</li>
+                            <li>explore pages</li>
+                            <li>e-commerce integrations</li>
+                        </ul>
+                        <br>
+
+                        <b>Weaknesses</b><br>
+                        <ul>
+                            <li>algorithmic feed only shows things that are tailored to a user's likes limited</li>
+                            <li>customization for profiles</li>
+                            <li>you cant share links in posts</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <img src="/images/fashion/style-arena.png"/>
+                        Launched in 2007, they focus on the ever - changing fashion scene, seeking to support the
+                        development of the existing fashion culture in Tokyo<br><br>
+
+                        <b>Strengths</b>
+                        <ul>
+                            <li>clean design</li>
+                            <li>well organized</li>
+                            <li>frequently updated</li>
+                            <li>auto-scrolling main page with fashion photos</li>
+                        </ul>
+                        <br>
+
+                        <b>Weaknesses</b>
+                        <ul>
+                            <li>design is a little basic / nondescript</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <img src="/images/fashion/drop-tokyo.png"/>
+                        Created in 2002, includes maps of fashion styles and functions almost like a archive of street
+                        fashion.
+                        <br><br>
+                        <b>Strengths</b>
+                        <ul>
+                            <li>Interesting design</li>
+                            <li>frequent updates for photography</li>
+                        </ul>
+                        <br>
+                        <b>Weaknesses</b>
+                        <ul>
+                            <li>design can be a bit confusing the navigate.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <img src="/images/fashion/vogue.png"/>
+                        Legacy brand with cross-platform continuity , and global access to fashion at all levels<br><br>
+
+                        <b>Strengths</b>
+                        <ul>
+                            <li>frequently updated</li>
+                            <li>lots of photos</li>
+                            <li>sleek design</li>
+                        </ul>
+                        <br>
+                        <b>Weaknesses</b>
+                        <ul>
+                            <li>Often stuck behind a paywall after viewing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-6 col-sm-4">
+            <h1>Affinity Diagrams</h1>
+        </div>
+        <div class="col-6 col-sm-4">User preference analysis <b>confirmed significant interest in search and filtering
+            features</b> in the app. Implementing these features will enhance navigation, increase user engagement, and
+            boost conversions, providing a competitive edge and enabling data collection for further product
+            improvements
+        </div>
+        <div class="col-12 col-sm-4">
+            <img src="/images/fashion/a-d-diag-1.png">
+        </div>
+        <div class="col-12 col-sm-4">
+            <img src="/images/fashion/a-d-diag-2.png">
+        </div>
+    </div>
+</div>
+<div class="hero-section">
+    <div class="wrapper">
+        <div class="grid y-center sm-none">
+            <div class="col-6 col-sm-4">
+                <h1>Inspiration, Engagement, & Conversion </h1>
+                <p>Users were inspired by fashion trends showcased in the app but found it difficult to transition from
+                    inspiration to purchase, leading to missed revenue opportunities and reduced satisfaction.</p>
+            </div>
+            <div class="col-6 col-sm-4">
+                <img src="/images/fashion/h-s-3.png">
+            </div>
+        </div>
+        <div class="grid y-center none sm-block">
+            <div class="col-6 col-sm-4">
+                <h1>Inspiration, Engagement, & Conversion </h1>
+                <img src="/images/fashion/h-s-3.png">
+                <p>Users were inspired by fashion trends showcased in the app but found it difficult to transition from
+                    inspiration to purchase, leading to missed revenue opportunities and reduced satisfaction.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid y-center">
+        <div class="col-6 col-sm-4">
+            <h1>User Flow Improvements</h1>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="col-4 col-sm-4">
+            <b>Simplified Navigation:</b> The restructuring of the navigation menu based on user testing results in
+            reduced search times and increased satisfaction.
+        </div>
+        <div class="col-4 col-sm-4">
+            <b>Enhanced Product Visuals:</b> By increasing the size and quality of product images, we have seen a
+            notable increase in user engagement and a decrease in bounce rates on product pages.
+        </div>
+        <div class="col-4 col-sm-4">
+            <b>Enhanced Product Visuals:</b> By increasing the size and quality of product images, we have seen a
+            notable increase in user engagement and a decrease in bounce rates on product pages.
+        </div>
+    </div>
+    <div class="sep"></div>
+    <div class="grid">
+        <div class="col-12">
+            <img src="/images/fashion/h-s-4.png">
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-6 col-sm-4">
+            <h1>Usability Testing</h1>
+        </div>
+        <div class="col-6 col-sm-4">The integration of a <b>"Live Mode"</b> feature to display fashion trends in
+            real-time,
+            complemented by an immediate purchase option via an integrated e-commerce platform. This allowed users to
+            not only view trends but also instantly buy liked items without navigating away from the app.
+        </div>
+        <div class="col-12 col-sm-4">
+            <img src="/images/fashion/h-s-5.png">
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-6 col-sm-4">
+            <h1>Video</h1>
+        </div>
+        <div class="col-12 col-sm-4">
+            <img src="/images/fashion/h-s-6.png">
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-6">
+            <h1>Hi-Fi Prototype</h1>
+        </div>
+        <div class="col-12">
+            <img src="/images/fashion/h-s-7.png">
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-6">
+            <h1>Future plans</h1>
+            <ul>
+                <li>Introduce sponsored posts</li>
+                <li>Flesh out checkout process</li>
+                <li>Develop creator portal onboarding process</li>
+                <li>Change inspo - patterns</li>
+                <li>Product Range Expansion: Plans to add new product categories based on user interests and requests
+                </li>
+                <li>Personalized Offers: Developing a system for personalized recommendations based on users' purchase
+                    history and preferences to increase loyalty and retention
+                </li>
+            </ul>
+        </div>
+        <div class="col-6">
+            <img src="/images/fashion/h-s-8.png">
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid y-center">
+        <div class="col-4 col-sm-4 flex x-sm-center">
+            <svg width="124" height="51" viewBox="0 0 124 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0.225586" width="50.5486" height="50.5486" rx="25.2743" fill="#666666" fill-opacity="0.4"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.4898 20.1312L16.4956 32.8792C19.1517 36.6439 23.4559 36.6439 26.1121 32.8792L28.5173 29.4702L29.1518 30.3695L26.7465 33.7785C24.1975 37.3915 20.3058 37.9399 17.3486 35.4254L14.581 39.3481C16.9663 41.7787 19.8587 42.7623 22.6543 42.2982L23.6628 44.7742H25.4815L24.2924 41.8547C26.1852 41.138 27.9744 39.7272 29.4595 37.6222C33.9634 31.2387 33.9634 20.8882 29.4595 14.5031H34.9948V12.8183C33.4326 12.8183 32.6933 11.5935 31.9919 9.87235C30.8824 7.14762 28.4236 6.21357 26.5012 7.78771C24.5788 9.36028 23.9198 12.8452 25.0304 15.5699L25.724 17.2737C26.1098 18.2157 26.0429 19.3488 25.4898 20.1312ZM30.0661 9.89922C30.433 9.89922 30.7296 10.3212 30.7296 10.8396C30.7296 11.3596 30.433 11.7816 30.0661 11.78C29.6993 11.78 29.4027 11.358 29.4027 10.8396C29.4027 10.3212 29.7004 9.89922 30.0661 9.89922ZM27.642 41.136L29.1228 44.7711H27.303L26.2381 42.1554C26.7187 41.8598 27.187 41.52 27.642 41.136Z"
+                      fill="white"/>
+                <path d="M75.6604 21.1401H63.652V4.62567H75.6604V8.87224H68.6064V11.0191H74.7639V14.7939H68.6064V16.8936H75.6604V21.1401ZM83.0059 8.87224V12.1515H85.5538C86.4031 12.1515 87.0165 11.3494 87.0165 10.5473C87.0165 9.67438 86.4031 8.87224 85.5538 8.87224H83.0059ZM86.0728 16.0914H83.0059V21.1401H78.0515V4.62567H86.0728C89.9183 4.62567 91.9709 7.33876 91.9709 10.5001C91.9709 13.6614 89.8947 16.0914 86.0728 16.0914ZM98.7877 4.62567V21.1401H93.8333V4.62567H98.7877ZM100.817 12.8829C100.817 8.28244 104.451 4.36615 110.018 4.36615C112.755 4.36615 114.619 5.45139 116.388 7.00847L113.581 10.217C112.472 8.96661 111.151 8.61273 110.018 8.61273C107.447 8.61273 105.772 10.5001 105.772 12.8829C105.772 15.2657 107.447 17.1531 110.018 17.1531C111.151 17.1531 112.472 16.7992 113.581 15.5488L116.388 18.7573C114.619 20.3144 112.755 21.3996 110.018 21.3996C104.451 21.3996 100.817 17.4834 100.817 12.8829ZM74.1269 44.1401L68.6064 36.2604V44.1401H63.652V27.6257H67.5211L73.0181 35.3639V27.6257H77.9724V44.1401H74.1269ZM84.4017 44.1401H79.2822L85.6756 27.6257H90.0638L96.6224 44.1401H91.3613L90.2997 41.3799H85.3925L84.4017 44.1401ZM87.8933 32.8631L86.1711 37.5108H89.474L87.8933 32.8631ZM105.627 44.1401H97.8652V27.6257H105.627C110.44 27.6257 114.026 31.3296 114.026 35.8829C114.026 40.4598 110.44 44.1401 105.627 44.1401ZM104.943 31.8722H102.82V39.8936H104.943C107.491 39.8936 109.071 38.3129 109.071 35.8829C109.071 33.4293 107.491 31.8487 104.943 31.8722ZM121.043 27.6257V44.1401H116.089V27.6257H121.043Z"
+                      fill="#666666" fill-opacity="0.4"/>
+            </svg>
+        </div>
+        <div class="col-4 col-sm-4 flex row x-sm-center" style="gap: 12px">
+            <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M35.6879 0.222656H9.32147C4.22347 0.222656 0.0907288 4.3554 0.0907288 9.4534V35.8199C0.0907288 40.9179 4.22347 45.0506 9.32147 45.0506H35.6879C40.7859 45.0506 44.9187 40.9179 44.9187 35.8199V9.4534C44.9187 4.3554 40.7859 0.222656 35.6879 0.222656Z"
+                      fill="#666666" fill-opacity="0.4"/>
+                <path d="M15.6245 18.3403H10.3783V35.0676H15.6245V18.3403Z" fill="white"/>
+                <path d="M29.805 17.9678C29.6068 17.946 29.4038 17.9303 29.1971 17.9219C26.2604 17.8022 24.5999 19.5449 24.027 20.2882C23.8748 20.4876 23.7986 20.6157 23.7986 20.6157V18.3775H18.7808V35.1047H24.027V27.2457C24.027 26.1109 23.9388 24.8975 24.5068 23.8666C24.9878 22.9953 25.8567 22.559 26.8405 22.559C29.7373 22.559 29.8062 25.1803 29.8062 25.4293V35.1809H35.0524V24.2703C35.0524 20.5371 33.155 18.3292 29.8062 17.9678H29.805Z"
+                      fill="white"/>
+                <path d="M15.9527 13.831C16.3386 12.196 15.3259 10.5576 13.6909 10.1717C12.0558 9.78583 10.4175 10.7985 10.0316 12.4335C9.64571 14.0686 10.6583 15.7069 12.2934 16.0928C13.9284 16.4787 15.5668 15.4661 15.9527 13.831Z"
+                      fill="white"/>
+            </svg>
+
+            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.2037 37.6586H13.6135C10.9015 37.6586 8.69598 35.4531 8.69598 32.7411V13.1509C8.69598 10.439 10.9015 8.2334 13.6135 8.2334H33.2037C35.9157 8.2334 38.1212 10.439 38.1212 13.1509V32.7411C38.1212 35.4531 35.9157 37.6586 33.2037 37.6586ZM13.6135 9.84195C11.7898 9.84195 10.3057 11.326 10.3057 13.1497V32.7399C10.3057 34.5636 11.7898 36.0477 13.6135 36.0477H33.2037C35.0274 36.0477 36.5115 34.5636 36.5115 32.7399V13.1509C36.5115 11.3272 35.0274 9.84316 33.2037 9.84316H13.6135V9.84195Z"
+                      fill="white"/>
+                <path d="M23.4059 30.4958C21.3889 30.4958 19.4939 29.7103 18.0678 28.2842C16.6418 26.8582 15.8562 24.962 15.8562 22.9462C15.8562 20.9303 16.6418 19.0342 18.0678 17.6081C19.4939 16.182 21.3901 15.3965 23.4059 15.3965C25.4217 15.3965 27.3179 16.182 28.744 17.6081C30.17 19.0342 30.9556 20.9303 30.9556 22.9462C30.9556 24.962 30.17 26.8582 28.744 28.2842C27.3179 29.7103 25.4217 30.4958 23.4059 30.4958ZM23.4059 17.005C20.1308 17.005 17.466 19.6698 17.466 22.945C17.466 26.2201 20.1308 28.8849 23.4059 28.8849C26.681 28.8849 29.3458 26.2201 29.3458 22.945C29.3458 19.6698 26.681 17.005 23.4059 17.005Z"
+                      fill="white"/>
+                <path d="M34.1818 12.6544C34.3656 11.8755 33.8832 11.0951 33.1044 10.9112C32.3255 10.7274 31.5451 11.2098 31.3612 11.9887C31.1774 12.7675 31.6598 13.548 32.4387 13.7318C33.2175 13.9156 33.998 13.4332 34.1818 12.6544Z"
+                      fill="white"/>
+                <path d="M23.0005 23.0358L12.9619 15.0639H33.0391L23.0005 23.0358ZM23.0005 25.4283C22.7695 25.4283 22.5384 25.3524 22.3471 25.2004L10.9167 16.1235V30.2344C10.9167 30.5603 11.1819 30.8254 11.5078 30.8254H34.4933C34.8192 30.8254 35.0844 30.5603 35.0844 30.2344V16.1234L23.654 25.2005C23.4626 25.3524 23.2315 25.4283 23.0005 25.4283ZM45.4169 7.39272V38.4967C45.4169 42.2817 42.3375 45.361 38.5525 45.361H7.44859C3.66355 45.361 0.58419 42.2817 0.58419 38.4966V7.39272C0.58419 3.60768 3.66355 0.52832 7.44859 0.52832H38.5526C42.3375 0.52832 45.4169 3.60768 45.4169 7.39272ZM37.1859 15.655C37.1859 14.1703 35.978 12.9624 34.4933 12.9624H11.5078C10.0231 12.9624 8.8152 14.1703 8.8152 15.655V30.2344C8.8152 31.7191 10.0231 32.927 11.5078 32.927H34.4933C35.978 32.927 37.1859 31.7191 37.1859 30.2344V15.655Z"
+                      fill="#C2C2C2"/>
+            </svg>
+
+
+            <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M35.6717 0.949219H9.30528C4.20728 0.949219 0.0745392 5.08196 0.0745392 10.18V36.5464C0.0745392 41.6444 4.20728 45.7772 9.30528 45.7772H35.6717C40.7697 45.7772 44.9025 41.6444 44.9025 36.5464V10.18C44.9025 5.08196 40.7697 0.949219 35.6717 0.949219Z"
+                      fill="#666666" fill-opacity="0.4"/>
+                <path d="M24.6826 26.0268V39.7062H18.3922V26.0268H13.1726V20.4821H18.3922V18.4566C18.3922 10.9613 21.5175 7.02393 28.1426 7.02393C30.1717 7.02393 30.6805 7.34781 31.796 7.6149V13.1028C30.5464 12.8805 30.1971 12.7681 28.9028 12.7681C27.3631 12.7681 26.5498 13.1983 25.8017 14.0564C25.0536 14.9156 24.6802 16.4045 24.6802 18.5231V20.4821H31.8008L29.8877 26.0268H24.6802H24.6826Z"
+                      fill="white"/>
+            </svg>
+        </div>
+        <div class="col-4 col-sm-4 flex x-sm-center">
+            <span style="display: block; font-size: 24px; font-weight: bold; color: #C2C2C2">USA , San Francisco</span>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
