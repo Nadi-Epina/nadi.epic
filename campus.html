@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/campus/style.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                autoplay: true,
+                arrows: true,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div class="wrapper" style="padding-top: 14px; padding-bottom: 14px;">
+    <div class="grid y-center">
+        <div class="col-4 col-sm-1">
+            <div class="logo">
+                <svg height="83" viewBox="0 0 193 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M41.3109 24.3838C43.228 24.1008 44.5299 22.4579 44.2187 20.7142C43.9075 18.9706 42.1011 17.7865 40.1839 18.0696C38.2668 18.3526 36.9649 19.9955 37.2761 21.7392C37.5873 23.4828 39.3937 24.6669 41.3109 24.3838Z"
+                          fill="#DF496D"/>
+                    <path d="M64.0421 37.6616L57.6907 43.4328C57.3942 43.7025 56.9079 43.7025 56.6114 43.4328L56.5106 43.3411C56.558 42.6669 56.5936 41.9927 56.5936 41.3131V32.5699L61.6581 29.2798C62.0377 29.0317 62.0377 28.5193 61.6581 28.2765L56.5936 24.9864V22.8559C56.5936 16.9929 53.9427 11.2379 49.317 7.06313C44.7981 2.97471 38.8914 0.736328 32.6704 0.736328C32.6111 0.736328 32.5518 0.736328 32.4925 0.736328C26.1708 0.779478 20.2285 3.03944 15.7629 7.10628C11.244 11.2109 8.75917 16.6693 8.75917 22.4891V43.4166L8.73545 43.4382C8.43893 43.7079 7.95264 43.7079 7.65612 43.4382L1.30468 37.667C0.824322 37.2301 0 37.5375 0 38.1578V53.2763C0 61.4801 3.65311 68.9073 9.5657 74.2848C15.5079 79.6893 23.7215 83.0172 32.7891 82.9848C50.8648 82.9255 65.3409 69.2686 65.3409 52.8286V38.1578C65.3409 37.5375 64.5225 37.2301 64.0362 37.667L64.0421 37.6616ZM11.3685 22.4837C11.3685 17.3004 13.5865 12.4353 17.6073 8.77833C21.5866 5.15916 26.8824 3.14192 32.5103 3.10416C32.5637 3.10416 32.6171 3.10416 32.6704 3.10416C38.1976 3.10416 43.4519 5.09983 47.4786 8.73518C51.6121 12.4676 53.9842 17.6078 53.9842 22.8451V41.038L49.5068 36.9712C49.2103 36.7015 48.724 36.7015 48.4275 36.9712L41.3229 43.4328C41.0263 43.7025 40.5401 43.7025 40.2435 43.4328L33.2101 37.0413C32.9136 36.7716 32.4273 36.7716 32.1308 37.0413L25.1033 43.4328C24.8068 43.7025 24.3205 43.7025 24.024 43.4328L16.9194 36.9712C16.6228 36.7015 16.1366 36.7015 15.84 36.9712L11.3626 41.0434V22.4891L11.3685 22.4837Z"
+                          fill="#DF496D"/>
+                    <path d="M101.451 37.4668H80.5705V8.75131H101.451V16.1353H89.1851V19.8683H99.8919V26.4318H89.1851V30.0828H101.451V37.4668ZM114.223 16.1353V21.8374H118.653C120.13 21.8374 121.197 20.4426 121.197 19.0479C121.197 17.53 120.13 16.1353 118.653 16.1353H114.223ZM119.556 28.6881H114.223V37.4668H105.608V8.75131H119.556C126.243 8.75131 129.811 13.4689 129.811 18.9658C129.811 24.4628 126.202 28.6881 119.556 28.6881ZM141.665 8.75131V37.4668H133.05V8.75131H141.665ZM145.194 23.1091C145.194 15.1097 151.511 8.30006 161.192 8.30006C165.951 8.30006 169.192 10.1871 172.268 12.8945L167.387 18.4736C165.459 16.2994 163.161 15.684 161.192 15.684C156.721 15.684 153.808 18.9658 153.808 23.1091C153.808 27.2523 156.721 30.5341 161.192 30.5341C163.161 30.5341 165.459 29.9187 167.387 27.7446L172.268 33.3236C169.192 36.031 165.951 37.918 161.192 37.918C151.511 37.918 145.194 31.1084 145.194 23.1091ZM98.7843 74.4668L89.1851 60.7654V74.4668H80.5705V45.7513H87.2981L96.8563 59.2066V45.7513H105.471V74.4668H98.7843ZM116.65 74.4668H107.748L118.865 45.7513H126.495L137.9 74.4668H128.752L126.906 69.6672H118.373L116.65 74.4668ZM122.721 54.8582L119.727 62.9396H125.47L122.721 54.8582ZM153.557 74.4668H140.061V45.7513H153.557C161.925 45.7513 168.161 52.1918 168.161 60.1091C168.161 68.0673 161.925 74.4668 153.557 74.4668ZM152.367 53.1353H148.675V67.0828H152.367C156.798 67.0828 159.546 64.3343 159.546 60.1091C159.546 55.8428 156.798 53.0943 152.367 53.1353ZM180.363 45.7513V74.4668H171.749V45.7513H180.363Z"
+                          fill="#DF496D"/>
+                </svg>
+            </div>
+        </div>
+        <div class="col-8 col-sm-3">
+            <ul class="nav">
+                <li><a href="/index.html">Work</a></li>
+                <li><a href="/about-me.html">About me</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="hero-section header" style="background: url('./images/campus/img_12.png') center;">
+    <div class="wrapper">
+        <div class="grid x3 overlay">
+            <div class="col-4 col-sm-1"><img src="./images/campus/img_14.png"></div>
+            <div class="col-4 col-sm-1"><img src="./images/campus/img_15.png"></div>
+            <div class="col-4 col-sm-1"><img src="./images/campus/img_16.png"></div>
+        </div>
+    </div>
+</div>
+<div class="wrapper sm-none" style="padding-top: 0; text-align: center">
+    <div class="grid">
+        <div class="col-4">
+            <h4>Explore Recipes</h4>
+            <span>Explore a wide variety of recipes tailored for college students.</span>
+        </div>
+        <div class="col-4">
+            <h4>Instant Recipe Generator</h4>
+            <span>Snap photos of your ingredients to get personalized recipe suggestions instantly.</span>
+        </div>
+        <div class="col-4">
+            <h4>Step-by-Step Instructions</h4>
+            <span>Detailed step-by-step instructions to guide you through every recipe.</span>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper sm-block none" style="padding-top: 0;">
+    <div class="grid">
+        <div class="col-4">
+            <h4>Explore Recipes</h4>
+            <span>Explore a wide variety of recipes tailored for college students.</span>
+        </div>
+        <div class="col-4">
+            <h4>Instant Recipe Generator</h4>
+            <span>Snap photos of your ingredients to get personalized recipe suggestions instantly.</span>
+        </div>
+        <div class="col-4">
+            <h4>Step-by-Step Instructions</h4>
+            <span>Detailed step-by-step instructions to guide you through every recipe.</span>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-12 col-sm-4">
+            <h2>Campus Cookbook</h2>
+        </div>
+        <div class="col-6 col-sm-4">
+            <span>
+            Was created with the intention of assisting college students who are navigating independent cooking for
+            the
+            first time, offering fast, nutritious, and straightforward meal suggestions. The application will
+            showcase a
+            range of recipes customized to match your dietary preferences.
+                </span>
+        </div>
+        <div class="col-12 col-sm-4 sm-block none">
+            <img src="./images/campus/img_1.png">
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5 col-sm-4">
+            <div class="grid">
+                <div class="col-6 col-sm-2">
+                    <b>Project Type</b><br>
+                    Fashion app<br><br>
+
+                    <b>My Role</b><br>
+                    UX / UI designer
+                </div>
+                <div class="col-6 col-sm-2">
+                    <b>Project Timeline</b><br>
+                    3 weeks<br><br>
+
+                    <b>Project Stack</b><br>
+                    Figma, Trello, Adobe
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-6 col-sm-4 sm-none">
+            <img src="./images/campus/img_1.png">
+        </div>
+        <div class="col-1"></div>
+        <div class="col-4">
+            <div class="grid" style="height: 100%; align-items: center">
+                <div class="col-12">
+                    <h3>Problem</h3><br>
+                    According to our survey, 70% of students skip meals due to lack of time, directly affecting
+                    their health and academic performance."
+                </div>
+                <div class="col-12">
+                    <h3>Solution</h3><br>
+                    "I designed the Campus Cookbook app to help students whip up meals in no time. It's got a cool
+                    fridge scanning feature and quick recipe tips, all wrapped up in a super user-friendly interface
+                    that actually makes cooking fun."
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-6 col-sm-4">
+            <h3>Business Goals</h3>
+            <ul style="list-style: disc; line-height: 26px; padding-left: 28px">
+                <li>Implement fridge scanning to increase user retention</li>
+                <li>Partnership with Local Grocery Stores (by ZIP Code)</li>
+            </ul>
+        </div>
+        <div class="col-1 col-sm-4"></div>
+        <div class="col-5 col-sm-4">
+            <h3>Goals</h3>
+            <ul style="list-style: disc; line-height: 26px; padding-left: 28px">
+                <li>Reduce Food Waste and</li>
+                <li>Improve Nutritional Intake.</li>
+                <li>Enhanced User Experience</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-12"><h2>Research Insights</h2></div>
+    </div>
+    <div class="grid">
+        <div class="col-4 sm-none">
+            <img src="./images/campus/img_2.png">
+        </div>
+        <div class="col-4 none sm-block">
+            <img src="./images/campus/img_18.png">
+        </div>
+        <div class="col-4">
+            <div class="grid" style="height: 100%">
+                <div class="col-12">
+                    <div class="txt-ri">
+                        <h3>Limited Time</h3><br>
+
+                        A significant 70% of students cited their busy academic and social schedules as the main reason
+                        for
+                        avoiding cooking, highlighting the need for quick and efficient meal solutions.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="txt-ri">
+                        <h3>Fridge Scanning Feature</h3><br>
+                        <b>Innovation</b>: Introduced a fridge scanning feature to help students better utilize
+                        available
+                        ingredients and suggest recipes based on those ingredients.<br><br>
+                        <b>Goal</b>: To reduce food waste and help students prepare a variety of dishes without the need
+                        for
+                        additional purchases.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="grid" style="height: 100%">
+                <div class="col-12">
+                    <div class="txt-ri">
+                        <h3>Budget Constraints</h3><br>
+                        Nearly 60% of the participants pointed out budget constraints as a key factor in their meal
+                        preparation decisions, emphasizing the need for cost-effective meal options that do not
+                        compromise
+                        on nutritional value
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="txt-ri">
+                        <h3>Limited Cooking Skills</h3><br>
+                        <b>Insight</b>: About 50% of students feel uncertain about their cooking abilities.<br><br>
+
+                        <b>Application</b>: Alongside recipe suggestions, the fridge scanning feature can offer
+                        step-by-step
+                        cooking guides, boosting confidence among novice cooks by making the process straightforward and
+                        educational.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-12"><h2>User Persona</h2></div>
+    </div>
+    <div class="grid">
+        <div class="col-3 col-sm-2">
+            <img src="./images/campus/img_17.png">
+        </div>
+        <div class="col-9">
+            <div class="layout">
+                <div class="grid">
+                    <div class="col-12">
+                        <div class="grid">
+                            <div class="col-6">
+                                <b>Max</b>
+                                <ul style="list-style: disc; line-height: 26px; padding-left: 28px">
+                                    <li>18 years old</li>
+                                    <li>College student</li>
+                                    <li>Studying Finance</li>
+                                    <li>Studies at University of Santa Barbara</li>
+                                    <li>Enjoys protein packed meals</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <b>Goals</b>
+                                <ul style="list-style: disc; line-height: 26px; padding-left: 28px">
+                                    <li>Wants fast, easy and cheap meals</li>
+                                    <li>To save time for work and extra-curriculars</li>
+                                    <li>Be a good student while fueling his body with healthy foods</li>
+                                    <li>Find time to be social and spend time with his friends</li>
+                                    <li>Wants to know how to cook for potential significant other</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12">
+                        <div class="grid">
+                            <div class="col-6">
+                                <b>Backstory</b><br>
+                                “I am not a great cook but would love to find quick and healthy recipes to get me
+                                through
+                                the week”
+                            </div>
+                            <div class="col-6">
+                                <b>Frustration</b>
+                                <ul style="list-style: disc; line-height: 26px; padding-left: 28px">
+                                    <li>Finds it difficult to cook in between classes</li>
+                                    <li>Researching meals is time consuming</li>
+                                    <li>Finds it hard to find healthy and affordable meals</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-12"><h2>Affinity Diagrams</h2></div>
+        <div class="col-12">
+            <img src="./images/campus/img_3.png">
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-12 col-sm-4"><h3>Key Findings:</h3></div>
+        <div class="col-4 col-sm-4">
+            <b>Limited Time and Skills:</b><br>
+            Students need fast, simple cooking options suited to their busy schedules and basic culinary skills.
+        </div>
+        <div class="col-4 col-sm-4">
+            <b>Budget Constraints:</b><br>
+            Financial limits require cost-effective recipes that still deliver on nutrition and flavor.
+        </div>
+        <div class="col-4 col-sm-4">
+            <b>Cooking Methods:</b><br>
+            The use of basic cooking appliances by students shows a need for recipes designed for minimal kitchen
+            setups.
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid y-center">
+        <div class="col-6 sm-none">
+            <span style="font-size: 24px">Campus Cookbook was designed to assist students in discovering the joy of cooking. I want to inspire
+            students with limited budgets, resources, and time to cook, with confidence. We aim to help students find a
+                way to save money and create healthy meals in a snap.</span>
+        </div>
+        <div class="col-6 col-sm-4">
+            <img src="./images/campus/img_4.png">
+        </div>
+
+        <div class="col-6 col-sm-4 none sm-block">
+            <span style="font-size: 24px">Campus Cookbook was designed to assist students in discovering the joy of cooking. I want to inspire
+            students with limited budgets, resources, and time to cook, with confidence. We aim to help students find a
+                way to save money and create healthy meals in a snap.</span>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-6">
+            <h2>PRIORITIZATION MATRIX</h2>
+        </div>
+        <div class="col-6">
+            <span style="font-size: 24px">
+            The prioritization matrix you've created is a strategic tool that helps in making informed decisions about
+            which features to develop for the "Campus Cookbook" app based on their impact and complexity.
+                </span>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-12">
+            <img src="./images/campus/img_5.png">
+        </div>
+    </div>
+
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-12"><h2>JOURNEY MAP</h2></div>
+        <div class="col-12"><img src="./images/campus/img_8.png"></div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-12"><h2>Lo-Fi Prototype</h2></div>
+        <div class="col-12"><img src="./images/campus/img_6.png"></div>
+    </div>
+</div>
+<div class="wrapper d-variations">
+    <div class="grid">
+        <div class="col-12 col-sm-4">
+            <h2>Design Variations</h2>
+        </div>
+        <div class="col-sm-4 none sm-block">
+            <img src="./images/campus/img_19.png">
+        </div>
+        <div class="col-6">
+            <h3>Iteration 1</h3>
+
+            The initial design used a raccoon mascot and bright, vibrant tones to create a fun and engaging app,
+            appealing to users’ humor with the raccoon’s insatiable appetite, akin to hungry students.<br><br>
+            <b>Method:</b><br>
+            Usability testing<br><br>
+
+            <b>Results:</b><br><br>
+
+            <ul class="iterations">
+                <li>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.424971 0.463731C0.697433 0.191608 1.06677 0.0387598 1.45185 0.0387598C1.83693 0.0387598 2.20626 0.191608 2.47872 0.463731L8.71747 6.70248L14.9562 0.463731C15.1338 0.272452 15.3598 0.13262 15.6102 0.0589677C15.8606 -0.0146847 16.1262 -0.0194304 16.3791 0.0452302C16.632 0.109891 16.8628 0.241564 17.0471 0.426376C17.2315 0.611189 17.3625 0.842299 17.4265 1.09536C17.4911 1.34797 17.4864 1.61329 17.4132 1.86351C17.3399 2.11372 17.2006 2.33961 17.01 2.51748L10.7712 8.75623L17.01 14.995C17.2013 15.1726 17.3411 15.3985 17.4147 15.6489C17.4884 15.8994 17.4931 16.165 17.4285 16.4179C17.3638 16.6708 17.2321 16.9016 17.0473 17.0859C16.8625 17.2702 16.6314 17.4013 16.3783 17.4653C16.1257 17.5298 15.8604 17.5252 15.6102 17.4519C15.36 17.3786 15.1341 17.2394 14.9562 17.0487L8.71747 10.81L2.47872 17.0487C2.20331 17.3057 1.83887 17.4457 1.46224 17.4392C1.0856 17.4327 0.726213 17.2802 0.459846 17.0139C0.193493 16.7475 0.0409846 16.3881 0.0344784 16.0115C0.0279723 15.6348 0.167977 15.2704 0.424971 14.995L6.66372 8.75623L0.424971 2.51748C0.152849 2.24502 0 1.87569 0 1.49061C0 1.10553 0.152849 0.736193 0.424971 0.463731Z"
+                              fill="#A4A4A4"/>
+                    </svg>
+                    Users had difficulty navigating the main menu.
+                </li>
+                <li>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.424971 0.463731C0.697433 0.191608 1.06677 0.0387598 1.45185 0.0387598C1.83693 0.0387598 2.20626 0.191608 2.47872 0.463731L8.71747 6.70248L14.9562 0.463731C15.1338 0.272452 15.3598 0.13262 15.6102 0.0589677C15.8606 -0.0146847 16.1262 -0.0194304 16.3791 0.0452302C16.632 0.109891 16.8628 0.241564 17.0471 0.426376C17.2315 0.611189 17.3625 0.842299 17.4265 1.09536C17.4911 1.34797 17.4864 1.61329 17.4132 1.86351C17.3399 2.11372 17.2006 2.33961 17.01 2.51748L10.7712 8.75623L17.01 14.995C17.2013 15.1726 17.3411 15.3985 17.4147 15.6489C17.4884 15.8994 17.4931 16.165 17.4285 16.4179C17.3638 16.6708 17.2321 16.9016 17.0473 17.0859C16.8625 17.2702 16.6314 17.4013 16.3783 17.4653C16.1257 17.5298 15.8604 17.5252 15.6102 17.4519C15.36 17.3786 15.1341 17.2394 14.9562 17.0487L8.71747 10.81L2.47872 17.0487C2.20331 17.3057 1.83887 17.4457 1.46224 17.4392C1.0856 17.4327 0.726213 17.2802 0.459846 17.0139C0.193493 16.7475 0.0409846 16.3881 0.0344784 16.0115C0.0279723 15.6348 0.167977 15.2704 0.424971 14.995L6.66372 8.75623L0.424971 2.51748C0.152849 2.24502 0 1.87569 0 1.49061C0 1.10553 0.152849 0.736193 0.424971 0.463731Z"
+                              fill="#A4A4A4"/>
+                    </svg>
+                    Users thouth it is mobile version.
+                </li>
+                <li>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.424971 0.463731C0.697433 0.191608 1.06677 0.0387598 1.45185 0.0387598C1.83693 0.0387598 2.20626 0.191608 2.47872 0.463731L8.71747 6.70248L14.9562 0.463731C15.1338 0.272452 15.3598 0.13262 15.6102 0.0589677C15.8606 -0.0146847 16.1262 -0.0194304 16.3791 0.0452302C16.632 0.109891 16.8628 0.241564 17.0471 0.426376C17.2315 0.611189 17.3625 0.842299 17.4265 1.09536C17.4911 1.34797 17.4864 1.61329 17.4132 1.86351C17.3399 2.11372 17.2006 2.33961 17.01 2.51748L10.7712 8.75623L17.01 14.995C17.2013 15.1726 17.3411 15.3985 17.4147 15.6489C17.4884 15.8994 17.4931 16.165 17.4285 16.4179C17.3638 16.6708 17.2321 16.9016 17.0473 17.0859C16.8625 17.2702 16.6314 17.4013 16.3783 17.4653C16.1257 17.5298 15.8604 17.5252 15.6102 17.4519C15.36 17.3786 15.1341 17.2394 14.9562 17.0487L8.71747 10.81L2.47872 17.0487C2.20331 17.3057 1.83887 17.4457 1.46224 17.4392C1.0856 17.4327 0.726213 17.2802 0.459846 17.0139C0.193493 16.7475 0.0409846 16.3881 0.0344784 16.0115C0.0279723 15.6348 0.167977 15.2704 0.424971 14.995L6.66372 8.75623L0.424971 2.51748C0.152849 2.24502 0 1.87569 0 1.49061C0 1.10553 0.152849 0.736193 0.424971 0.463731Z"
+                              fill="#A4A4A4"/>
+                    </svg>
+                    Users was dissapointed “why here is raccon”?
+                </li>
+            </ul>
+
+            <b>User Comments:</b><br><br>
+
+            <ul class="iterations">
+                <li>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.424971 0.463731C0.697433 0.191608 1.06677 0.0387598 1.45185 0.0387598C1.83693 0.0387598 2.20626 0.191608 2.47872 0.463731L8.71747 6.70248L14.9562 0.463731C15.1338 0.272452 15.3598 0.13262 15.6102 0.0589677C15.8606 -0.0146847 16.1262 -0.0194304 16.3791 0.0452302C16.632 0.109891 16.8628 0.241564 17.0471 0.426376C17.2315 0.611189 17.3625 0.842299 17.4265 1.09536C17.4911 1.34797 17.4864 1.61329 17.4132 1.86351C17.3399 2.11372 17.2006 2.33961 17.01 2.51748L10.7712 8.75623L17.01 14.995C17.2013 15.1726 17.3411 15.3985 17.4147 15.6489C17.4884 15.8994 17.4931 16.165 17.4285 16.4179C17.3638 16.6708 17.2321 16.9016 17.0473 17.0859C16.8625 17.2702 16.6314 17.4013 16.3783 17.4653C16.1257 17.5298 15.8604 17.5252 15.6102 17.4519C15.36 17.3786 15.1341 17.2394 14.9562 17.0487L8.71747 10.81L2.47872 17.0487C2.20331 17.3057 1.83887 17.4457 1.46224 17.4392C1.0856 17.4327 0.726213 17.2802 0.459846 17.0139C0.193493 16.7475 0.0409846 16.3881 0.0344784 16.0115C0.0279723 15.6348 0.167977 15.2704 0.424971 14.995L6.66372 8.75623L0.424971 2.51748C0.152849 2.24502 0 1.87569 0 1.49061C0 1.10553 0.152849 0.736193 0.424971 0.463731Z"
+                              fill="#A4A4A4"/>
+                    </svg>
+                    "I couldn't find the botton home easily."
+                </li>
+                <li>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.424971 0.463731C0.697433 0.191608 1.06677 0.0387598 1.45185 0.0387598C1.83693 0.0387598 2.20626 0.191608 2.47872 0.463731L8.71747 6.70248L14.9562 0.463731C15.1338 0.272452 15.3598 0.13262 15.6102 0.0589677C15.8606 -0.0146847 16.1262 -0.0194304 16.3791 0.0452302C16.632 0.109891 16.8628 0.241564 17.0471 0.426376C17.2315 0.611189 17.3625 0.842299 17.4265 1.09536C17.4911 1.34797 17.4864 1.61329 17.4132 1.86351C17.3399 2.11372 17.2006 2.33961 17.01 2.51748L10.7712 8.75623L17.01 14.995C17.2013 15.1726 17.3411 15.3985 17.4147 15.6489C17.4884 15.8994 17.4931 16.165 17.4285 16.4179C17.3638 16.6708 17.2321 16.9016 17.0473 17.0859C16.8625 17.2702 16.6314 17.4013 16.3783 17.4653C16.1257 17.5298 15.8604 17.5252 15.6102 17.4519C15.36 17.3786 15.1341 17.2394 14.9562 17.0487L8.71747 10.81L2.47872 17.0487C2.20331 17.3057 1.83887 17.4457 1.46224 17.4392C1.0856 17.4327 0.726213 17.2802 0.459846 17.0139C0.193493 16.7475 0.0409846 16.3881 0.0344784 16.0115C0.0279723 15.6348 0.167977 15.2704 0.424971 14.995L6.66372 8.75623L0.424971 2.51748C0.152849 2.24502 0 1.87569 0 1.49061C0 1.10553 0.152849 0.736193 0.424971 0.463731Z"
+                              fill="#A4A4A4"/>
+                    </svg>
+                    There are too many details on the recipe cards. It feels a bit cluttered."
+                </li>
+                <li>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.424971 0.463731C0.697433 0.191608 1.06677 0.0387598 1.45185 0.0387598C1.83693 0.0387598 2.20626 0.191608 2.47872 0.463731L8.71747 6.70248L14.9562 0.463731C15.1338 0.272452 15.3598 0.13262 15.6102 0.0589677C15.8606 -0.0146847 16.1262 -0.0194304 16.3791 0.0452302C16.632 0.109891 16.8628 0.241564 17.0471 0.426376C17.2315 0.611189 17.3625 0.842299 17.4265 1.09536C17.4911 1.34797 17.4864 1.61329 17.4132 1.86351C17.3399 2.11372 17.2006 2.33961 17.01 2.51748L10.7712 8.75623L17.01 14.995C17.2013 15.1726 17.3411 15.3985 17.4147 15.6489C17.4884 15.8994 17.4931 16.165 17.4285 16.4179C17.3638 16.6708 17.2321 16.9016 17.0473 17.0859C16.8625 17.2702 16.6314 17.4013 16.3783 17.4653C16.1257 17.5298 15.8604 17.5252 15.6102 17.4519C15.36 17.3786 15.1341 17.2394 14.9562 17.0487L8.71747 10.81L2.47872 17.0487C2.20331 17.3057 1.83887 17.4457 1.46224 17.4392C1.0856 17.4327 0.726213 17.2802 0.459846 17.0139C0.193493 16.7475 0.0409846 16.3881 0.0344784 16.0115C0.0279723 15.6348 0.167977 15.2704 0.424971 14.995L6.66372 8.75623L0.424971 2.51748C0.152849 2.24502 0 1.87569 0 1.49061C0 1.10553 0.152849 0.736193 0.424971 0.463731Z"
+                              fill="#A4A4A4"/>
+                    </svg>
+                    There are too many slides and surveys. It's tiring.
+                </li>
+            </ul>
+        </div>
+        <div class="col-1 sm-none"></div>
+        <div class="col-5 sm-none">
+            <img src="./images/campus/img_7.png">
+        </div>
+    </div>
+</div>
+<div class="wrapper d-variations">
+    <div class="grid">
+        <div class="col-5 sm-none">
+            <img src="./images/campus/img_9.png">
+        </div>
+        <div class="col-sm-4 sm-block none">
+            <img src="./images/campus/img_20.png">
+        </div>
+        <div class="col-1 sm-none"></div>
+        <div class="col-6">
+            <h3>Iteration 2</h3>
+
+            The second iteration features a monochrome theme for a sleek, modern look, simplifying navigation and
+            reducing visual clutter based on user feedback.<br><br>
+
+            <b>Method:</b><br>
+            Usability testing with a new group of target users was conducted to gather feedback on the updated design
+            and identify any usability issues.<br><br>
+
+            <b>Results:</b><br><br>
+            <ul class="iterations">
+                <li>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.424971 0.463731C0.697433 0.191608 1.06677 0.0387598 1.45185 0.0387598C1.83693 0.0387598 2.20626 0.191608 2.47872 0.463731L8.71747 6.70248L14.9562 0.463731C15.1338 0.272452 15.3598 0.13262 15.6102 0.0589677C15.8606 -0.0146847 16.1262 -0.0194304 16.3791 0.0452302C16.632 0.109891 16.8628 0.241564 17.0471 0.426376C17.2315 0.611189 17.3625 0.842299 17.4265 1.09536C17.4911 1.34797 17.4864 1.61329 17.4132 1.86351C17.3399 2.11372 17.2006 2.33961 17.01 2.51748L10.7712 8.75623L17.01 14.995C17.2013 15.1726 17.3411 15.3985 17.4147 15.6489C17.4884 15.8994 17.4931 16.165 17.4285 16.4179C17.3638 16.6708 17.2321 16.9016 17.0473 17.0859C16.8625 17.2702 16.6314 17.4013 16.3783 17.4653C16.1257 17.5298 15.8604 17.5252 15.6102 17.4519C15.36 17.3786 15.1341 17.2394 14.9562 17.0487L8.71747 10.81L2.47872 17.0487C2.20331 17.3057 1.83887 17.4457 1.46224 17.4392C1.0856 17.4327 0.726213 17.2802 0.459846 17.0139C0.193493 16.7475 0.0409846 16.3881 0.0344784 16.0115C0.0279723 15.6348 0.167977 15.2704 0.424971 14.995L6.66372 8.75623L0.424971 2.51748C0.152849 2.24502 0 1.87569 0 1.49061C0 1.10553 0.152849 0.736193 0.424971 0.463731Z"
+                              fill="#FF3A2F"/>
+                    </svg>
+                    Users suggested adding color highlights.
+                </li>
+                <li>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.424971 0.463731C0.697433 0.191608 1.06677 0.0387598 1.45185 0.0387598C1.83693 0.0387598 2.20626 0.191608 2.47872 0.463731L8.71747 6.70248L14.9562 0.463731C15.1338 0.272452 15.3598 0.13262 15.6102 0.0589677C15.8606 -0.0146847 16.1262 -0.0194304 16.3791 0.0452302C16.632 0.109891 16.8628 0.241564 17.0471 0.426376C17.2315 0.611189 17.3625 0.842299 17.4265 1.09536C17.4911 1.34797 17.4864 1.61329 17.4132 1.86351C17.3399 2.11372 17.2006 2.33961 17.01 2.51748L10.7712 8.75623L17.01 14.995C17.2013 15.1726 17.3411 15.3985 17.4147 15.6489C17.4884 15.8994 17.4931 16.165 17.4285 16.4179C17.3638 16.6708 17.2321 16.9016 17.0473 17.0859C16.8625 17.2702 16.6314 17.4013 16.3783 17.4653C16.1257 17.5298 15.8604 17.5252 15.6102 17.4519C15.36 17.3786 15.1341 17.2394 14.9562 17.0487L8.71747 10.81L2.47872 17.0487C2.20331 17.3057 1.83887 17.4457 1.46224 17.4392C1.0856 17.4327 0.726213 17.2802 0.459846 17.0139C0.193493 16.7475 0.0409846 16.3881 0.0344784 16.0115C0.0279723 15.6348 0.167977 15.2704 0.424971 14.995L6.66372 8.75623L0.424971 2.51748C0.152849 2.24502 0 1.87569 0 1.49061C0 1.10553 0.152849 0.736193 0.424971 0.463731Z"
+                              fill="#FF3A2F"/>
+                    </svg>
+                    Some felt the landing screen needed more engaging elements.
+                </li>
+            </ul>
+
+            <b>User Comments:</b><br><br>
+
+            <ul class="iterations">
+                <li>
+                    <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.59553 15.3211C9.27864 15.638 8.76486 15.638 8.44797 15.3211L4.06525 10.9384C3.31686 10.19 2.10347 10.19 1.35508 10.9384C0.606691 11.6868 0.606691 12.9002 1.35508 13.6486L8.20159 20.4951C8.65455 20.948 9.38895 20.9481 9.84191 20.4951L26.2718 4.06525C27.0201 3.31686 27.0201 2.10347 26.2717 1.35508C25.5234 0.606691 24.31 0.606691 23.5616 1.35508L9.59553 15.3211Z"
+                              fill="#81D29E"/>
+                    </svg>
+                    The new design looks very clean and modern. It's much easier to navigate.
+                </li>
+                <li>
+                    <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.59553 15.3211C9.27864 15.638 8.76486 15.638 8.44797 15.3211L4.06525 10.9384C3.31686 10.19 2.10347 10.19 1.35508 10.9384C0.606691 11.6868 0.606691 12.9002 1.35508 13.6486L8.20159 20.4951C8.65455 20.948 9.38895 20.9481 9.84191 20.4951L26.2718 4.06525C27.0201 3.31686 27.0201 2.10347 26.2717 1.35508C25.5234 0.606691 24.31 0.606691 23.5616 1.35508L9.59553 15.3211Z"
+                              fill="#81D29E"/>
+                    </svg>
+                    I love the monochrome theme, but it would be nice to have some color highlights.
+                </li>
+                <li>
+                    <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.59553 15.3211C9.27864 15.638 8.76486 15.638 8.44797 15.3211L4.06525 10.9384C3.31686 10.19 2.10347 10.19 1.35508 10.9384C0.606691 11.6868 0.606691 12.9002 1.35508 13.6486L8.20159 20.4951C8.65455 20.948 9.38895 20.9481 9.84191 20.4951L26.2718 4.06525C27.0201 3.31686 27.0201 2.10347 26.2717 1.35508C25.5234 0.606691 24.31 0.606691 23.5616 1.35508L9.59553 15.3211Z"
+                              fill="#81D29E"/>
+                    </svg>
+                    The landing screen could use more visual appeal to make it more engaging.
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper d-variations">
+    <div class="grid">
+        <div class="col-sm-4 sm-block none">
+            <img src="./images/campus/img_21.png">
+        </div>
+        <div class="col-5">
+            <h3>Iteration 3</h3>
+            <b>Method:</b><br>
+            Usability testing was conducted to gather feedback on the updated design and identify any remaining
+            usability issues.<br><br>
+
+            <b>Results:</b><br><br>
+
+            <ul class="iterations">
+                <li>
+                    <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.59553 15.3211C9.27864 15.638 8.76486 15.638 8.44797 15.3211L4.06525 10.9384C3.31686 10.19 2.10347 10.19 1.35508 10.9384C0.606691 11.6868 0.606691 12.9002 1.35508 13.6486L8.20159 20.4951C8.65455 20.948 9.38895 20.9481 9.84191 20.4951L26.2718 4.06525C27.0201 3.31686 27.0201 2.10347 26.2717 1.35508C25.5234 0.606691 24.31 0.606691 23.5616 1.35508L9.59553 15.3211Z"
+                              fill="#81D29E"/>
+                    </svg>
+                    Some users felt the new color scheme reminded them of a plant-related app.
+                </li>
+                <li>
+                    <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.59553 15.3211C9.27864 15.638 8.76486 15.638 8.44797 15.3211L4.06525 10.9384C3.31686 10.19 2.10347 10.19 1.35508 10.9384C0.606691 11.6868 0.606691 12.9002 1.35508 13.6486L8.20159 20.4951C8.65455 20.948 9.38895 20.9481 9.84191 20.4951L26.2718 4.06525C27.0201 3.31686 27.0201 2.10347 26.2717 1.35508C25.5234 0.606691 24.31 0.606691 23.5616 1.35508L9.59553 15.3211Z"
+                              fill="#81D29E"/>
+                    </svg>
+                    Users found the instructions on how to use the app lacking.
+                </li>
+                <li>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.424971 0.463731C0.697433 0.191608 1.06677 0.0387598 1.45185 0.0387598C1.83693 0.0387598 2.20626 0.191608 2.47872 0.463731L8.71747 6.70248L14.9562 0.463731C15.1338 0.272452 15.3598 0.13262 15.6102 0.0589677C15.8606 -0.0146847 16.1262 -0.0194304 16.3791 0.0452302C16.632 0.109891 16.8628 0.241564 17.0471 0.426376C17.2315 0.611189 17.3625 0.842299 17.4265 1.09536C17.4911 1.34797 17.4864 1.61329 17.4132 1.86351C17.3399 2.11372 17.2006 2.33961 17.01 2.51748L10.7712 8.75623L17.01 14.995C17.2013 15.1726 17.3411 15.3985 17.4147 15.6489C17.4884 15.8994 17.4931 16.165 17.4285 16.4179C17.3638 16.6708 17.2321 16.9016 17.0473 17.0859C16.8625 17.2702 16.6314 17.4013 16.3783 17.4653C16.1257 17.5298 15.8604 17.5252 15.6102 17.4519C15.36 17.3786 15.1341 17.2394 14.9562 17.0487L8.71747 10.81L2.47872 17.0487C2.20331 17.3057 1.83887 17.4457 1.46224 17.4392C1.0856 17.4327 0.726213 17.2802 0.459846 17.0139C0.193493 16.7475 0.0409846 16.3881 0.0344784 16.0115C0.0279723 15.6348 0.167977 15.2704 0.424971 14.995L6.66372 8.75623L0.424971 2.51748C0.152849 2.24502 0 1.87569 0 1.49061C0 1.10553 0.152849 0.736193 0.424971 0.463731Z"
+                              fill="#FF3A2F"/>
+                    </svg>
+                    Certain UI elements were not well-developed (e.g., excessive borders on the cards).
+                </li>
+            </ul>
+
+            <b>User Comments:</b><br><br>
+
+            <ul class="iterations">
+                <li>
+                    <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.59553 15.3211C9.27864 15.638 8.76486 15.638 8.44797 15.3211L4.06525 10.9384C3.31686 10.19 2.10347 10.19 1.35508 10.9384C0.606691 11.6868 0.606691 12.9002 1.35508 13.6486L8.20159 20.4951C8.65455 20.948 9.38895 20.9481 9.84191 20.4951L26.2718 4.06525C27.0201 3.31686 27.0201 2.10347 26.2717 1.35508C25.5234 0.606691 24.31 0.606691 23.5616 1.35508L9.59553 15.3211Z"
+                              fill="#81D29E"/>
+                    </svg>
+
+                    "The new green theme looks very fresh and natural."
+                </li>
+                <li>
+                    <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.59553 15.3211C9.27864 15.638 8.76486 15.638 8.44797 15.3211L4.06525 10.9384C3.31686 10.19 2.10347 10.19 1.35508 10.9384C0.606691 11.6868 0.606691 12.9002 1.35508 13.6486L8.20159 20.4951C8.65455 20.948 9.38895 20.9481 9.84191 20.4951L26.2718 4.06525C27.0201 3.31686 27.0201 2.10347 26.2717 1.35508C25.5234 0.606691 24.31 0.606691 23.5616 1.35508L9.59553 15.3211Z"
+                              fill="#81D29E"/>
+                    </svg>
+
+                    "The green color scheme reminded me of a plant app."
+                </li>
+                <li>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.424971 0.463731C0.697433 0.191608 1.06677 0.0387598 1.45185 0.0387598C1.83693 0.0387598 2.20626 0.191608 2.47872 0.463731L8.71747 6.70248L14.9562 0.463731C15.1338 0.272452 15.3598 0.13262 15.6102 0.0589677C15.8606 -0.0146847 16.1262 -0.0194304 16.3791 0.0452302C16.632 0.109891 16.8628 0.241564 17.0471 0.426376C17.2315 0.611189 17.3625 0.842299 17.4265 1.09536C17.4911 1.34797 17.4864 1.61329 17.4132 1.86351C17.3399 2.11372 17.2006 2.33961 17.01 2.51748L10.7712 8.75623L17.01 14.995C17.2013 15.1726 17.3411 15.3985 17.4147 15.6489C17.4884 15.8994 17.4931 16.165 17.4285 16.4179C17.3638 16.6708 17.2321 16.9016 17.0473 17.0859C16.8625 17.2702 16.6314 17.4013 16.3783 17.4653C16.1257 17.5298 15.8604 17.5252 15.6102 17.4519C15.36 17.3786 15.1341 17.2394 14.9562 17.0487L8.71747 10.81L2.47872 17.0487C2.20331 17.3057 1.83887 17.4457 1.46224 17.4392C1.0856 17.4327 0.726213 17.2802 0.459846 17.0139C0.193493 16.7475 0.0409846 16.3881 0.0344784 16.0115C0.0279723 15.6348 0.167977 15.2704 0.424971 14.995L6.66372 8.75623L0.424971 2.51748C0.152849 2.24502 0 1.87569 0 1.49061C0 1.10553 0.152849 0.736193 0.424971 0.463731Z"
+                              fill="#A4A4A4"/>
+                    </svg>
+                    "I didn’t find the instructions on how to use the app lacking."
+                </li>
+            </ul>
+        </div>
+        <div class="col-1 sm-none"></div>
+        <div class="col-6 sm-none">
+            <img src="./images/campus/img_10.png">
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="grid">
+        <div class="col-6">
+            <div class="grid" style="height: 100%; align-items: center">
+                <div class="col-12">
+                    <h2>Hi-Fi Prototype</h2>
+
+                    I added :
+                    <ul style="list-style: disc; line-height: 26px; padding-left: 28px">
+                        <li>Instructions</li>
+
+                        <li>Changed UI elemnets</li>
+
+                        <li>Different color (heathy food)</li>
+
+                        <li>Changed carts of products</li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <h2>Future plans</h2>
+
+                    <ul style="list-style: disc; line-height: 26px; padding-left: 28px">
+                        <li>Add features about collaborations with grocery stores (good price near you)</li>
+                        <li>Add video content</li>
+                        <li>Add AI</li>
+                        <li>Add comments for users, creators .</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-6">
+            <img src="./images/campus/img_11.png">
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="grid y-center">
+        <div class="col-4 col-sm-4 flex x-sm-center">
+            <svg width="124" height="51" viewBox="0 0 124 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0.225586" width="50.5486" height="50.5486" rx="25.2743" fill="#666666" fill-opacity="0.4"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.4898 20.1312L16.4956 32.8792C19.1517 36.6439 23.4559 36.6439 26.1121 32.8792L28.5173 29.4702L29.1518 30.3695L26.7465 33.7785C24.1975 37.3915 20.3058 37.9399 17.3486 35.4254L14.581 39.3481C16.9663 41.7787 19.8587 42.7623 22.6543 42.2982L23.6628 44.7742H25.4815L24.2924 41.8547C26.1852 41.138 27.9744 39.7272 29.4595 37.6222C33.9634 31.2387 33.9634 20.8882 29.4595 14.5031H34.9948V12.8183C33.4326 12.8183 32.6933 11.5935 31.9919 9.87235C30.8824 7.14762 28.4236 6.21357 26.5012 7.78771C24.5788 9.36028 23.9198 12.8452 25.0304 15.5699L25.724 17.2737C26.1098 18.2157 26.0429 19.3488 25.4898 20.1312ZM30.0661 9.89922C30.433 9.89922 30.7296 10.3212 30.7296 10.8396C30.7296 11.3596 30.433 11.7816 30.0661 11.78C29.6993 11.78 29.4027 11.358 29.4027 10.8396C29.4027 10.3212 29.7004 9.89922 30.0661 9.89922ZM27.642 41.136L29.1228 44.7711H27.303L26.2381 42.1554C26.7187 41.8598 27.187 41.52 27.642 41.136Z"
+                      fill="white"/>
+                <path d="M75.6604 21.1401H63.652V4.62567H75.6604V8.87224H68.6064V11.0191H74.7639V14.7939H68.6064V16.8936H75.6604V21.1401ZM83.0059 8.87224V12.1515H85.5538C86.4031 12.1515 87.0165 11.3494 87.0165 10.5473C87.0165 9.67438 86.4031 8.87224 85.5538 8.87224H83.0059ZM86.0728 16.0914H83.0059V21.1401H78.0515V4.62567H86.0728C89.9183 4.62567 91.9709 7.33876 91.9709 10.5001C91.9709 13.6614 89.8947 16.0914 86.0728 16.0914ZM98.7877 4.62567V21.1401H93.8333V4.62567H98.7877ZM100.817 12.8829C100.817 8.28244 104.451 4.36615 110.018 4.36615C112.755 4.36615 114.619 5.45139 116.388 7.00847L113.581 10.217C112.472 8.96661 111.151 8.61273 110.018 8.61273C107.447 8.61273 105.772 10.5001 105.772 12.8829C105.772 15.2657 107.447 17.1531 110.018 17.1531C111.151 17.1531 112.472 16.7992 113.581 15.5488L116.388 18.7573C114.619 20.3144 112.755 21.3996 110.018 21.3996C104.451 21.3996 100.817 17.4834 100.817 12.8829ZM74.1269 44.1401L68.6064 36.2604V44.1401H63.652V27.6257H67.5211L73.0181 35.3639V27.6257H77.9724V44.1401H74.1269ZM84.4017 44.1401H79.2822L85.6756 27.6257H90.0638L96.6224 44.1401H91.3613L90.2997 41.3799H85.3925L84.4017 44.1401ZM87.8933 32.8631L86.1711 37.5108H89.474L87.8933 32.8631ZM105.627 44.1401H97.8652V27.6257H105.627C110.44 27.6257 114.026 31.3296 114.026 35.8829C114.026 40.4598 110.44 44.1401 105.627 44.1401ZM104.943 31.8722H102.82V39.8936H104.943C107.491 39.8936 109.071 38.3129 109.071 35.8829C109.071 33.4293 107.491 31.8487 104.943 31.8722ZM121.043 27.6257V44.1401H116.089V27.6257H121.043Z"
+                      fill="#666666" fill-opacity="0.4"/>
+            </svg>
+        </div>
+        <div class="col-4 col-sm-4 flex row x-sm-center" style="gap: 12px">
+            <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M35.6879 0.222656H9.32147C4.22347 0.222656 0.0907288 4.3554 0.0907288 9.4534V35.8199C0.0907288 40.9179 4.22347 45.0506 9.32147 45.0506H35.6879C40.7859 45.0506 44.9187 40.9179 44.9187 35.8199V9.4534C44.9187 4.3554 40.7859 0.222656 35.6879 0.222656Z"
+                      fill="#666666" fill-opacity="0.4"/>
+                <path d="M15.6245 18.3403H10.3783V35.0676H15.6245V18.3403Z" fill="white"/>
+                <path d="M29.805 17.9678C29.6068 17.946 29.4038 17.9303 29.1971 17.9219C26.2604 17.8022 24.5999 19.5449 24.027 20.2882C23.8748 20.4876 23.7986 20.6157 23.7986 20.6157V18.3775H18.7808V35.1047H24.027V27.2457C24.027 26.1109 23.9388 24.8975 24.5068 23.8666C24.9878 22.9953 25.8567 22.559 26.8405 22.559C29.7373 22.559 29.8062 25.1803 29.8062 25.4293V35.1809H35.0524V24.2703C35.0524 20.5371 33.155 18.3292 29.8062 17.9678H29.805Z"
+                      fill="white"/>
+                <path d="M15.9527 13.831C16.3386 12.196 15.3259 10.5576 13.6909 10.1717C12.0558 9.78583 10.4175 10.7985 10.0316 12.4335C9.64571 14.0686 10.6583 15.7069 12.2934 16.0928C13.9284 16.4787 15.5668 15.4661 15.9527 13.831Z"
+                      fill="white"/>
+            </svg>
+
+            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.2037 37.6586H13.6135C10.9015 37.6586 8.69598 35.4531 8.69598 32.7411V13.1509C8.69598 10.439 10.9015 8.2334 13.6135 8.2334H33.2037C35.9157 8.2334 38.1212 10.439 38.1212 13.1509V32.7411C38.1212 35.4531 35.9157 37.6586 33.2037 37.6586ZM13.6135 9.84195C11.7898 9.84195 10.3057 11.326 10.3057 13.1497V32.7399C10.3057 34.5636 11.7898 36.0477 13.6135 36.0477H33.2037C35.0274 36.0477 36.5115 34.5636 36.5115 32.7399V13.1509C36.5115 11.3272 35.0274 9.84316 33.2037 9.84316H13.6135V9.84195Z"
+                      fill="white"/>
+                <path d="M23.4059 30.4958C21.3889 30.4958 19.4939 29.7103 18.0678 28.2842C16.6418 26.8582 15.8562 24.962 15.8562 22.9462C15.8562 20.9303 16.6418 19.0342 18.0678 17.6081C19.4939 16.182 21.3901 15.3965 23.4059 15.3965C25.4217 15.3965 27.3179 16.182 28.744 17.6081C30.17 19.0342 30.9556 20.9303 30.9556 22.9462C30.9556 24.962 30.17 26.8582 28.744 28.2842C27.3179 29.7103 25.4217 30.4958 23.4059 30.4958ZM23.4059 17.005C20.1308 17.005 17.466 19.6698 17.466 22.945C17.466 26.2201 20.1308 28.8849 23.4059 28.8849C26.681 28.8849 29.3458 26.2201 29.3458 22.945C29.3458 19.6698 26.681 17.005 23.4059 17.005Z"
+                      fill="white"/>
+                <path d="M34.1818 12.6544C34.3656 11.8755 33.8832 11.0951 33.1044 10.9112C32.3255 10.7274 31.5451 11.2098 31.3612 11.9887C31.1774 12.7675 31.6598 13.548 32.4387 13.7318C33.2175 13.9156 33.998 13.4332 34.1818 12.6544Z"
+                      fill="white"/>
+                <path d="M23.0005 23.0358L12.9619 15.0639H33.0391L23.0005 23.0358ZM23.0005 25.4283C22.7695 25.4283 22.5384 25.3524 22.3471 25.2004L10.9167 16.1235V30.2344C10.9167 30.5603 11.1819 30.8254 11.5078 30.8254H34.4933C34.8192 30.8254 35.0844 30.5603 35.0844 30.2344V16.1234L23.654 25.2005C23.4626 25.3524 23.2315 25.4283 23.0005 25.4283ZM45.4169 7.39272V38.4967C45.4169 42.2817 42.3375 45.361 38.5525 45.361H7.44859C3.66355 45.361 0.58419 42.2817 0.58419 38.4966V7.39272C0.58419 3.60768 3.66355 0.52832 7.44859 0.52832H38.5526C42.3375 0.52832 45.4169 3.60768 45.4169 7.39272ZM37.1859 15.655C37.1859 14.1703 35.978 12.9624 34.4933 12.9624H11.5078C10.0231 12.9624 8.8152 14.1703 8.8152 15.655V30.2344C8.8152 31.7191 10.0231 32.927 11.5078 32.927H34.4933C35.978 32.927 37.1859 31.7191 37.1859 30.2344V15.655Z"
+                      fill="#C2C2C2"/>
+            </svg>
+
+
+            <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M35.6717 0.949219H9.30528C4.20728 0.949219 0.0745392 5.08196 0.0745392 10.18V36.5464C0.0745392 41.6444 4.20728 45.7772 9.30528 45.7772H35.6717C40.7697 45.7772 44.9025 41.6444 44.9025 36.5464V10.18C44.9025 5.08196 40.7697 0.949219 35.6717 0.949219Z"
+                      fill="#666666" fill-opacity="0.4"/>
+                <path d="M24.6826 26.0268V39.7062H18.3922V26.0268H13.1726V20.4821H18.3922V18.4566C18.3922 10.9613 21.5175 7.02393 28.1426 7.02393C30.1717 7.02393 30.6805 7.34781 31.796 7.6149V13.1028C30.5464 12.8805 30.1971 12.7681 28.9028 12.7681C27.3631 12.7681 26.5498 13.1983 25.8017 14.0564C25.0536 14.9156 24.6802 16.4045 24.6802 18.5231V20.4821H31.8008L29.8877 26.0268H24.6802H24.6826Z"
+                      fill="white"/>
+            </svg>
+        </div>
+        <div class="col-4 col-sm-4 flex x-sm-center">
+            <span style="display: block; font-size: 24px; font-weight: bold; color: #C2C2C2">USA , San Francisco</span>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
