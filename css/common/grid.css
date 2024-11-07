@@ -1,0 +1,89 @@
+:root {
+    --container-max-width: 1006px;
+    --container-padding: 20px;
+    --gutter-width: 20px;
+    --columns: 12;
+}
+
+.container {
+    max-width: var(--container-max-width);
+    padding: 0 var(--container-padding);
+    box-sizing: border-box;
+    margin: 30px auto 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: var(--gutter-width);
+}
+
+.column {
+    grid-column: span 12;
+    box-sizing: border-box;
+}
+
+/* Колонки для десктопной версии */
+.column-1  { grid-column: span 1; }
+.column-2  { grid-column: span 2; }
+.column-3  { grid-column: span 3; }
+.column-4  { grid-column: span 4; }
+.column-5  { grid-column: span 5; }
+.column-6  { grid-column: span 6; }
+.column-7  { grid-column: span 7; }
+.column-8  { grid-column: span 8; }
+.column-9  { grid-column: span 9; }
+.column-10 { grid-column: span 10; }
+.column-11 { grid-column: span 11; }
+.column-12 { grid-column: span 12; }
+
+
+@media (max-width: 768px) {
+    :root {
+        --columns: 4;
+    }
+    .column-sm-1  { grid-column: span 1; }
+    .column-sm-2  { grid-column: span 2; }
+    .column-sm-3  { grid-column: span 3; }
+    .column-sm-4  { grid-column: span 4; }
+}
+
+/* Вспомогательные классы */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.padding {
+    padding: 20px;
+}
+
+/* Пропорциональные отступы для колонок */
+.gap-row {
+    margin-top: var(--gutter-width);
+    margin-bottom: var(--gutter-width);
+}
+
+.gap-column {
+    margin-left: var(--gutter-width);
+    margin-right: var(--gutter-width);
+}
