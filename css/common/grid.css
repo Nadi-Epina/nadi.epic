@@ -18,9 +18,29 @@
     gap: var(--gutter-width);
 }
 
+.grid.y-center {
+    align-items: center;
+}
+
 .column {
     grid-column: span 12;
     box-sizing: border-box;
+}
+
+*[class^="column-"].flex {
+    display: flex;
+}
+
+*[class^="column-"].d-column {
+    flex-direction: column;
+}
+
+*[class^="column-"].y-center {
+    justify-content: center;
+}
+
+*[class^="column-"].y-space-between {
+    justify-content: space-between;
 }
 
 /* Колонки для десктопной версии */
