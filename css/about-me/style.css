@@ -1,0 +1,61 @@
+.block {
+    margin: 2rem 0 4rem 0;
+}
+
+.my-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.my-skills .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.my-skills .container img {
+    margin-bottom: 1rem;
+    width: auto;
+    max-width: 100%;
+}
+
+
+.about-me {
+    display: grid;
+    grid-template-areas: "text image";
+    grid-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-me h2 {
+    color: #4e4b72;
+}
+
+.about-me.replace {
+    grid-template-areas: "image text";
+}
+
+.about-me .text {
+    grid-area: text;
+}
+
+.about-me .image {
+    grid-area: image;
+}
+
+@media (max-width: 767px) {
+    .my-skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .about-me.replace, .about-me {
+        grid-template-columns: 1fr;
+        grid-template-areas: "image" "text";
+    }
+}

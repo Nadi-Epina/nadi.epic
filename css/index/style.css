@@ -1,0 +1,77 @@
+.hero-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text image";
+    grid-gap: 4rem;
+    margin: 4rem 0;
+    align-items: center;
+}
+
+.hero-block.replace {
+    grid-template-areas: "image text";
+}
+
+.hero-block.first h1 {
+    color: #4e4b72;
+}
+
+.hero-block.first h3 {
+    color: #666666;
+}
+
+.hero-block p {
+    color: #4e4b72;
+}
+
+.hero-block .text {
+    grid-area: text;
+}
+
+.hero-block .image {
+    grid-area: image;
+}
+
+.hero-block .image img {
+    max-width: 100%;
+}
+
+.hero-block .button {
+    display: inline-block;
+    /* height: 36px; */
+    border: #959595 4px solid;
+    border-radius: 68px;
+    padding: 2rem 3rem;
+    /* height: 70px; */
+    color: #959595;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: #959595 4px solid;
+    margin-top: 3rem;
+    transition: ease-in-out 0.2s;
+}
+
+.hero-block .button:hover {
+    border-color: #df496d;
+    color: #df496d;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .hero-block.replace, .hero-block {
+        grid-template-areas: "image" "text";
+        grid-template-columns: 1fr;
+    }
+    .hero-block .button {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Для средних экранов (планшеты) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Для больших экранов (ноутбуки и ПК) */
+@media (min-width: 992px) {
+}

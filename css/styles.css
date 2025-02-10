@@ -43,13 +43,11 @@ a {
   margin-top: 40px;
 }
 /* Header Style*/
-.navigation {
+.header {
   display: flex;
-  justify-content: space-between; /* Размещает лого и навигацию на противоположных концах */
-  align-items: center; /* Центрирует элементы по вертикали */
-
-  background: #fff; /* Можно задать цвет фона, если нужно */
-
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
   margin-bottom: 36px;
 }
 .logo-img-small {

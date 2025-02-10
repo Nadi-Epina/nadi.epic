@@ -1,0 +1,81 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+
+footer ul li {
+    margin: 0 0.3rem;
+}
+
+footer ul li:first-child {
+    margin-left: 0;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+footer .place {
+    font-weight: 700;
+    color: #C2C2C2;
+}
+
+footer .social {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer .social {
+        margin-top: 1rem;
+    }
+
+    footer .place {
+        margin-top: 1rem;
+    }
+
+    footer img {
+        max-height: 3rem;
+    }
+
+    footer .place {
+        font-size: 1.4rem;
+    }
+}
+
+/* Для средних экранов (планшеты) */
+@media (min-width: 768px) and (max-width: 991px) {
+    footer img {
+        max-height: 4rem;
+    }
+
+    footer .place {
+        font-size: 1.6rem;
+    }
+}
+
+/* Для больших экранов (ноутбуки и ПК) */
+@media (min-width: 992px) {
+    footer img {
+        max-height: 5rem;
+    }
+
+    footer .place {
+        font-size: 2.28rem;
+    }
+}

@@ -1,0 +1,131 @@
+:root {
+    --grid-gap-default: 2rem
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: var(--grid-gap-default);
+}
+
+.grid.y-center {
+    align-items: center;
+}
+
+.column-1 {
+    grid-column: span 1;
+    display: block;
+}
+
+.column-2 {
+    grid-column: span 2;
+    display: block;
+}
+
+.column-3 {
+    grid-column: span 3;
+    display: block;
+}
+
+.column-4 {
+    grid-column: span 4;
+    display: block;
+}
+
+.column-5 {
+    grid-column: span 5;
+    display: block;
+}
+
+.column-6 {
+    grid-column: span 6;
+    display: block;
+}
+
+.column-7 {
+    grid-column: span 7;
+    display: block;
+}
+
+.column-8 {
+    grid-column: span 8;
+    display: block;
+}
+
+.column-9 {
+    grid-column: span 9;
+    display: block;
+}
+
+.column-10 {
+    grid-column: span 10;
+    display: block;
+}
+
+.column-11 {
+    grid-column: span 11;
+    display: block;
+}
+
+.column-12 {
+    grid-column: span 12;
+    display: block;
+}
+
+.column-0 {
+    display: none;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.fd-column {
+    flex-direction: column;
+}
+
+.a-items-center {
+    align-items: center;
+}
+
+.jc-space-between {
+    justify-content: space-between;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+
+
+@media (max-width: 767px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .column-sm-0 {
+        display: none;
+    }
+
+    .column-sm-1 {
+        grid-column: span 1;
+        display: block;
+    }
+
+    .column-sm-2 {
+        grid-column: span 2;
+        display: block;
+    }
+
+    .column-sm-3 {
+        grid-column: span 3;
+        display: block;
+    }
+
+    .column-sm-4 {
+        grid-column: span 4;
+        display: block;
+    }
+}

@@ -1,0 +1,149 @@
+
+
+.logo > * {
+    height: 82px;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif !important;
+    line-height: 28px;
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: end;
+}
+.nav li {
+    /* Frame 1051 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 64px;
+    font-weight: 600;
+}
+
+.nav li a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 58px;
+    line-height: 75px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.sep {
+    height: 48px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    list-style: disc;
+}
+
+ul.nums li {
+    list-style: decimal;
+    margin-bottom: 14px;
+}
+
+span, p {
+    font-size: 20px;
+}
+
+b {
+    font-weight: 900;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --black-bg: #1E1E1E
+}
+
+.image-block {
+    height: 300px;
+    background-color: #0099FF;
+}
+
+.hero-section {
+    background-color: var(--black-bg);
+    color: #FFFFFF;
+}
+
+.user-persona-card {
+    padding: 20px;
+    background-color: #D9D9D9;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    border: 2px solid #E0E0E0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+}
+
+.slider .item {}
+
+.slider .item .content {
+    padding: 42px;
+}
+
+.slider .item .content img {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 18px !important;
+        line-height: 24px !important;
+    }
+
+    h1 {
+        font-size: 42px !important;
+        margin-bottom: 18px !important;
+        line-height: 52px !important;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 8px;
+        justify-content: end;
+    }
+
+    .nav li {
+        font-size: 16px !important;
+    }
+
+    .user-persona-card img, .user-persona-card svg {
+        max-width: 64px;
+    }
+}

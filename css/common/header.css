@@ -1,0 +1,85 @@
+
+header {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+header .menu li {
+    margin-bottom: 0;
+}
+
+header .menu li a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #666666;
+    cursor: pointer;
+}
+
+header .menu li a:hover {
+    color: #333333
+}
+
+
+@media (max-width: 767px) {
+    header .menu {
+        font-size: 1.1rem;
+    }
+
+    header .menu li {
+        margin-left: 1rem;
+    }
+
+    header .logo img {
+        height: 2.6rem;
+    }
+}
+
+/* Для средних экранов (планшеты) */
+@media (min-width: 768px) and (max-width: 991px) {
+    header .menu {
+        font-size: 1.6rem;
+    }
+
+    header .menu li {
+        margin-left: 1.3rem;
+    }
+
+    header .logo img {
+        height: 6rem;
+    }
+}
+
+/* Для больших экранов (ноутбуки и ПК) */
+@media (min-width: 992px) {
+    header .menu {
+        font-size: 2.3rem;
+    }
+
+    header .menu li {
+        margin-left: 1.4rem;
+    }
+
+    header .logo img {
+        height: 6.8rem;
+    }
+}
